@@ -1,0 +1,10 @@
+{
+    "id": "lecture-slides",
+    "name": "Lecture Slides Processor",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Process lecture PDFs: convert to images, OCR to markdown, add structure & links. Supports batch processing.",
+    "author": "Just8it",
+    "authorUrl": "",
+    "isDesktopOnly": true
+}

@@ -1,0 +1,127 @@
+/* Lecture Slides Processor - Modal Styles */
+
+.lecture-slides-modal {
+    max-width: 600px;
+}
+
+.lecture-slides-modal h2 {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* PDF List */
+.pdf-list-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 6px;
+    margin: 12px 0;
+    padding: 8px;
+    background: var(--background-secondary);
+}
+
+.pdf-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.pdf-item:hover {
+    background: var(--background-modifier-hover);
+}
+
+.pdf-item.selected {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.pdf-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.pdf-item .pdf-name {
+    font-weight: 500;
+    flex: 1;
+}
+
+.pdf-item .pdf-path {
+    font-size: 0.85em;
+    opacity: 0.7;
+    margin-left: 8px;
+}
+
+/* Progress UI */
+.progress-container {
+    margin: 16px 0;
+    padding: 12px;
+    background: var(--background-secondary);
+    border-radius: 6px;
+}
+
+.progress-bar-outer {
+    height: 8px;
+    background: var(--background-modifier-border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background: var(--interactive-accent);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.progress-status {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-top: 6px;
+}
+
+.progress-log {
+    max-height: 150px;
+    overflow-y: auto;
+    font-family: var(--font-monospace);
+    font-size: 0.8em;
+    margin-top: 10px;
+    padding: 8px;
+    background: var(--background-primary);
+    border-radius: 4px;
+}
+
+.progress-log .log-success {
+    color: var(--text-success);
+}
+
+.progress-log .log-error {
+    color: var(--text-error);
+}
+
+.progress-log .log-info {
+    color: var(--text-muted);
+}
+
+/* Settings sections */
+.lecture-slides-settings h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--background-modifier-border);
+    padding-bottom: 6px;
+}
+
+/* Status bar */
+.lecture-slides-status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lecture-slides-status.processing {
+    color: var(--interactive-accent);
+}
